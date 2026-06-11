@@ -94,6 +94,14 @@ mit Caching des Ergebnisses).
 Lange Seiten → Inhaltsangabe/Zusammenfassung. Ebenfalls LLM-gestützt,
 on-demand + Caching.
 
+**Sprache (Vorlesen, Spracheingabe, Sprachnavigation)**
+Barrierefreiheit darf nicht geräteabhängig sein — daher ausschließlich über
+**browsernative Web-APIs** (Web Speech API: `SpeechSynthesis` zum Vorlesen,
+`SpeechRecognition` für Spracheingabe/-navigation), ausgeliefert als Teil
+des Schicht-2-JS. Keine lokalen/Desktop-Bibliotheken (z.B. `pyttsx3`) —
+funktioniert dadurch auf jedem Gerät mit modernem Browser, unabhängig vom
+Betriebssystem.
+
 ## Lizenzmodell — Update
 
 Entscheidung: **Schicht 1 (WCAG-Fundament) und Schicht 2 (Selbstbestimmungs-
