@@ -93,6 +93,14 @@ with caching of the result).
 Long pages → table of contents/summary. Also LLM-powered, on demand +
 caching.
 
+**Speech (read-aloud, voice input, voice navigation)**
+Accessibility must not be device-dependent — therefore implemented
+exclusively via **native browser Web APIs** (Web Speech API:
+`SpeechSynthesis` for read-aloud, `SpeechRecognition` for voice
+input/navigation), shipped as part of the layer 2 JS. No local/desktop
+libraries (e.g. `pyttsx3`) — works on any device with a modern browser,
+regardless of operating system.
+
 ## License model — update
 
 Decision: **Layer 1 (WCAG foundation) and layer 2 (self-determination
